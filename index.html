@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <form action="">
-            <input type="text" name="" id="">
+    <div class="container">
+        <div class="images">
+            <img class="img1" src="scriptsavvy.png" alt="">
+            <img class="img2" src="bridge-lang-gaps-.png" alt="">
+        </div>
+        <form id="input-form" action="">
+            <div class="lang-choice">
+                <label for="source-lang">Source Language:</label>
+                <select id="source-lang" name="source-lang">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="hindi">Hindi</option>
+                </select><br>
+                <label for="target-lang">Target Language:</label>
+                <select id="target-lang" name="target-lang">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="hindi">Hindi</option>
+                </select><br>
+            </div>
+            <label for="text-input"></label><br>
+            <textarea id="text-input" name="text-input" rows="4" cols="50" placeholder="Enter text to transliterate..."></textarea><br>
+            <input type="submit" value="Submit" class="sub-btn">
         </form>
     </div>
 </body>

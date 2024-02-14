@@ -1,0 +1,37 @@
+.container {
+    margin: 0px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.img1 {
+    width: 20%;
+}
+.img2 {
+    width: 30%;
+}
+.lang-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.lang-choice select {
+    padding: 15px 40px 15px 40px;
+    color: black;
+    border: 2px solid #0B60B0;
+    border-radius: 12px;
+}
+.container textarea {
+    border: 1px solid #0B60B0;
+    border-radius: 12px;
+    padding: 8px;
+}
+.container textarea::placeholder {
+    color: black;
+}
