@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transliterate</title>
+  <link rel="stylesheet" href="http://127.0.0.1:5000/static/styles.css">
+</head>
+<body>
+  <style>
+    #input-form {
+      display: none;
+    }
+    .choice-btn {
+      display: block;
+    }
+  </style>
+  <div class="header">
+    <img src="logo.png" alt="">
+    <h1>Cross Script Transliteration</h1>
+  </div>
+  <div class="container">
+    <img class="img2" src="bridge-lang-gaps-.png" alt="">
+    <p class="choice-btn" style="font-size: 24px;">How do you want to transliterate?</p>
+    <div style="display: flex; justify-content: center; gap: 100px;">
+      <button class="choice-btn" onclick="EngToLangForm()">English to another language</button>
+      <button class="choice-btn" onclick="LangToEngForm()">Other language to English</button>
+    </div>
+    <form id="input-form">
+      <div class="lang-choice" id="source-lang-div">
+        <label for="source-lang">Source Language:</label>
+        <select id="source-lang" name="source-lang">
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+          <option value="as">Assamese</option>
+          <option value="bn">Bengali</option>
+          <option value="kn">Kannada</option>
+          <option value="ml">Malayalam</option>
+          <option value="mr">Marathi</option>
+          <option value="ne">Nepali</option>
+          <option value="or">Oriya</option>
+          <option value="pa">Punjabi</option>
+          <option value="sa">Sanskrit</option>
+          <option value="si">Sinhala</option>
+          <option value="te">Telugu</option>
+        </select><br>
+      </div>
+      <div class="lang-choice" id="target-lang-div">
+        <label for="target-lang">Target Language:</label>
+        <select id="target-lang" name="target-lang">
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+          <option value="as">Assamese</option>
+          <option value="bn">Bengali</option>
+          <option value="kn">Kannada</option>
+          <option value="ml">Malayalam</option>
+          <option value="mr">Marathi</option>
+          <option value="ne">Nepali</option>
+          <option value="or">Oriya</option>
+          <option value="pa">Punjabi</option>
+          <option value="sa">Sanskrit</option>
+          <option value="si">Sinhala</option>
+          <option value="te">Telugu</option>
+        </select><br>
+      </div>
+      <label for="text-input"></label><br>
+      <input type="text" name="text-input" id="text-input" placeholder="Enter text to transliterate..."><br>
+      <input type="submit" value="Submit" class="sub-btn" onclick="getinp(event)">
+    </form>
+    <div>
+      <div class="output-box">
+        <p id="transliterated-text"></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="http://127.0.0.1:5000/static/app.js"></script>
+</body>
+</html>
